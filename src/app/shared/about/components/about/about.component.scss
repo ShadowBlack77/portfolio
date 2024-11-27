@@ -1,19 +1,16 @@
+@import '../../../../constants/variables.scss';
+
 .about-container {
   min-height: 100vh;
 
   .lead,
   .subtitle-color {
-    color: #ADD8E6;
-  }
-
-  .btn-about {
-    color: white;
-    border: 1px solid white;
+    color: $second-color;
   }
 
   .btn-about:hover {
-    color: #41175e;
-    border: 1px solid #41175e;
-    background-color: #ADD8E6;
+    color: $hover-color !important;
+    border: 1px solid $hover-color !important;
+    background-color: $second-color;
   }
 }

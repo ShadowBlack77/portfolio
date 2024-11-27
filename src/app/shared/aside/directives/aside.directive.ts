@@ -16,7 +16,7 @@ export class AsideDirective {
       this.isAsideShow.update((isShow) => isShow = !isShow);
 
       if (this.elementRef.nativeElement.classList.contains('aside-navbar-menu')) {
-        const asideSelector = this.elementRef.nativeElement.classList.value;
+        const asideSelector = this.elementRef.nativeElement.id;
 
         if (this.isAsideShow()) {
           this.showAside(asideSelector);
@@ -30,7 +30,7 @@ export class AsideDirective {
       this.isAsideShow.set(false);
 
       if (this.elementRef.nativeElement.classList.contains('aside-navbar-menu')) {
-        const asideSelector = this.elementRef.nativeElement.classList.value;
+        const asideSelector = this.elementRef.nativeElement.id;
         this.closeAside(asideSelector);
       }
     }
@@ -41,13 +41,13 @@ export class AsideDirective {
     this.isAsideShow.set(false);
 
     if (this.elementRef.nativeElement.classList.contains('aside-navbar-menu')) {
-      const asideSelector = this.elementRef.nativeElement.classList.value;
+      const asideSelector = this.elementRef.nativeElement.id;
       this.closeAside(asideSelector);
     }
   }
 
   private showAside(asideSelector: string): void {
-    gsap.to(`.${asideSelector}`, {
+    gsap.to(`#${asideSelector}`, {
       translateX: '0vw',
       duration: 0.5,
       ease: 'power2.in'
@@ -55,7 +55,7 @@ export class AsideDirective {
   }
 
   private closeAside(asideSelector: string): void {
-    gsap.to(`.${asideSelector}`, {
+    gsap.to(`#${asideSelector}`, {
       translateX: '-100vw',
       duration: 0.5,
       ease: 'power2.Out'

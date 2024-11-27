@@ -29,7 +29,7 @@ export class MainComponent {
   public sections: Record<string, SectionModel> = {
     about: { id: 'about', scrollTrigger: false },
     experience: { id: 'experience', scrollTrigger: true },
-    projects: { id: 'projects', scrollTrigger: true },
+    projects: { id: 'projects', scrollTrigger: false },
     contact: { id: 'contact', scrollTrigger: true }
   }
 }

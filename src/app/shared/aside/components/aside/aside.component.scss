@@ -1,10 +1,7 @@
 aside {
-  display: flex;
   backdrop-filter: blur(4px);
   background-color:rgba(65, 23, 94, .5);
-  height: 100%;
   width: min(75vw, 400px);
-  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;

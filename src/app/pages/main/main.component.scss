@@ -1,3 +1,5 @@
+@import '../../constants/variables.scss';
+
 .wrapper {
-  background-image: linear-gradient(180deg, #251E48, #41175e);
+  background-image: $main-background-color;
 }
