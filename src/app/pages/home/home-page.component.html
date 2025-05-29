@@ -1,0 +1,26 @@
+<lib-header [sectionInViewport]="currentSection()" />
+
+<div class="bg-main">
+  <lib-about 
+    id="about" 
+    (appInViewport)="sectionInViewport('about')" 
+    [@fade-in-about]="aboutState()" 
+  />
+  <lib-experience 
+    id="experience" 
+    (appInViewport)="sectionInViewport('experience')" 
+    [@fade-in-experience]="experienceState()" 
+  />
+  <lib-projects 
+    id="projects" 
+    (appInViewport)="sectionInViewport('projects')" 
+    [@fade-in-projects]="projectsState()"
+  />
+  <lib-contact 
+    id="contact" 
+    (appInViewport)="sectionInViewport('contact')" 
+    [@fade-in-contact]="contactState()"
+  />
+</div>
+
+<lib-footer />

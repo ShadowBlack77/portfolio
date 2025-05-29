@@ -1,0 +1,98 @@
+<div class="bg-secondary position-sticky top-0 left-0">
+  <div class="container">
+    <nav class="navbar min-height-5vh navbar-expanded-lg px-4 align-items-center d-flex">
+      <div class="container-fluid d-flex justify-content-between">
+        <div>
+          <a class="navbar-brand text-light" href="/">ShadowBlack |</a>
+        </div>
+        <div>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item d-none d-md-block mx-2">
+              <a 
+                href="/#about" 
+                class="nav-link text-grey nav-link-header"
+                [ngClass]="{ 'text-white': currentSection() === 'about' }"
+              >About</a>
+            </li>
+            <li class="nav-item d-none d-md-block mx-2">
+              <a 
+                href="/#experience" 
+                class="nav-link text-grey nav-link-header" 
+                [ngClass]="{ 'text-white': currentSection() === 'experience' }"
+              >Experience</a>
+            </li>
+            <li class="nav-item d-none d-md-block mx-2">
+              <a 
+                href="/#projects" 
+                class="nav-link text-grey nav-link-header"
+                [ngClass]="{ 'text-white': currentSection() === 'projects' }"
+              >Projects</a>
+            </li>
+            <li class="nav-item d-none d-md-block mx-2">
+              <a 
+                href="/#contact" 
+                class="nav-link text-grey nav-link-header"
+                [ngClass]="{ 'text-white': currentSection() === 'contact' }"
+              >Contact</a>
+            </li>
+            <li class="nav-item d-block d-md-none" role="button" (click)="toggleMenu()">
+              @if (isMenuOpen()) {
+                <i class="bi bi-x text-white display-6"></i>
+              } @else {
+                <i class="bi bi-list text-white display-6"></i>
+              }
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<aside 
+  class="d-flex d-md-none h-100 position-fixed z-index-20 top-0 bottom-0 left-0 bg-nav-menu nav-menu-width blur-4px transform-translate-x-100vw nav-bar-animations" 
+  aria-hidden="true"
+  [ngClass]="{
+    'transform-translate-x-0vw': isMenuOpen()
+  }"
+>
+  <div class="navbar navbar-expanded-lg px-4 w-100">
+    <div class="container-fluid d-flex flex-column align-items-center w-100 text-center">
+      <div>
+        <h3 class="text-light">Menu</h3>
+      </div>
+      <div>
+        <ul class="navbar-nav navbar-nav-aside">
+          <li class="nav-item mx-2">
+            <a 
+              href="/#about" 
+              class="nav-link text-grey"
+              [ngClass]="{ 'text-white': currentSection() === 'about' }"
+            >About</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a 
+              href="/#experience" 
+              class="nav-link text-grey"
+              [ngClass]="{ 'text-white': currentSection() === 'experience' }"
+            >Experience</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a 
+              href="/#projects" 
+              class="nav-link text-grey"
+              [ngClass]="{ 'text-white': currentSection() === 'projects' }"
+            >Projects</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a 
+              href="/#contact" 
+              class="nav-link text-grey"
+              [ngClass]="{ 'text-white': currentSection() === 'contact' }"
+            >Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</aside>

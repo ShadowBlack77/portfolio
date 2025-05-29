@@ -24,11 +24,11 @@
       "dom"
     ],
     "paths": {
-      "@pages": [
-        "./src/app/pages/index.ts"
+      "@lib/shared/components": [
+        "./libs/shared/components/src/index.ts"
       ],
-      "@shared": [
-        "./src/app/shared/index.ts"
+      "@lib/shared/directives": [
+        "./libs/shared/directives/src/index.ts"
       ]
     }
   },

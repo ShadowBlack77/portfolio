@@ -1,0 +1,74 @@
+$main-background-color: linear-gradient(180deg, #251E48, #41175e);
+$second-backround-color: #251E48;
+$second-color: #ADD8E6;
+$hover-color: #41175e;
+$nav-background-color: rgba(65, 23, 94, .8);
+
+.bg-main {
+  background: $main-background-color !important;
+}
+
+.bg-secondary {
+  background-color: $second-backround-color !important;
+}
+
+.bg-nav-menu {
+  background-color: $nav-background-color;
+}
+
+.btn-main {
+  color: white;
+  border: 1px solid white;
+}
+
+
+.btn-main:hover {
+  color: $hover-color !important;
+  border: 1px solid $hover-color !important;
+  background-color: $second-color;
+}
+
+.lead,
+.subtitle-color,
+.date {
+  color: $second-color;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}
+
+.contact-link {
+  color: white;
+  border: 1px solid white;
+}
+
+.contact-link:hover {
+  color: $hover-color;
+  border: 1px solid $hover-color;
+  background-color: $second-color;
+}
+
+.footer-link {
+  padding: 0.2rem;
+  background-color: $second-color;
+  color: $hover-color;
+  text-decoration: noen;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: .2s;
+}
+
+.footer-link:hover {
+  background-color: $hover-color;
+  color: $second-color;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
