@@ -16,6 +16,13 @@ Responsive portfolio created with Angular and Bootstrap. Contains information ab
 - ✅ "Skills" section in the form of icons and a short description
 - ✅ Responsive design
 
+## 🌐 Demo
+## 🔗 [https://twoja-strona.netlify.app](https://shadowblack77.netlify.app/)
+
+## 🧠 Autor
+- Daniel Miliczek
+- GitHub: @ShadowBlack77
+
 ## 📸 Zrzuty ekranu
 
 ![Home](./assets/screenshots/about.png)
