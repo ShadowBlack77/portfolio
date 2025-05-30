@@ -17,7 +17,7 @@ Responsive portfolio created with Angular and Bootstrap. Contains information ab
 - ✅ Responsive design
 
 ## 🌐 Demo
-## 🔗 [https://twoja-strona.netlify.app](https://shadowblack77.netlify.app/)
+- 🔗 [https://twoja-strona.netlify.app](https://shadowblack77.netlify.app/)
 
 ## 🧠 Autor
 - Daniel Miliczek
