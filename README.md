@@ -27,4 +27,4 @@ Responsive portfolio created with Angular and Bootstrap. Contains information ab
 
 ![Home](./assets/screenshots/about.png)
 ![Experience](./assets/screenshots/experience.png)
-![Projekty](./assets/screenshots/projects.png)
+![Projects](./assets/screenshots/projects.png)
