@@ -1,3 +1,16 @@
 .nav-bar-animations {
   transition: .25s ease-in-out all;
 }
+
+.technologies-slide {
+  animation: 35s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

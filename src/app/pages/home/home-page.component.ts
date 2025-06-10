@@ -1,6 +1,6 @@
 import { animate, state, style, transition, trigger } from "@angular/animations";
 import { Component, signal, WritableSignal } from "@angular/core";
-import { AboutComponent, ContactComponent, ExperienceComponent, FooterComponent, HeaderComponent, ProjectsComponent } from "@lib/shared/components";
+import { AboutComponent, ContactComponent, ExperienceComponent, FooterComponent, HeaderComponent, ProjectsComponent, TechnologiesComponent } from "@lib/shared/components";
 import { InViewportDirective } from "@lib/shared/directives";
 
 @Component({
@@ -14,6 +14,7 @@ import { InViewportDirective } from "@lib/shared/directives";
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
+    TechnologiesComponent,
     InViewportDirective
   ],
   animations: [

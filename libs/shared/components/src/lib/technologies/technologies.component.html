@@ -1,0 +1,37 @@
+<div class="overflow-hidden py-5 position-relative white-space-nowrap technologies">
+  <div class="d-inline-flex technologies-slide">
+    @for (technology of technologies(); track $index) {
+      <div class="d-flex flex-column align-items-center justify-content-center mx-5 tech">
+        <img 
+          [ngSrc]="technology.imageUrl" 
+          [alt]="technology.title"
+          width="50"
+          height="50"
+          class="d-block"
+        >
+        <p class="mt-2 fs-5 white-space-nowrap text-white">
+          <i>{{ technology.title }}</i>
+        </p>
+      </div>
+    }
+  </div>
+
+  <div class="d-inline-flex technologies-slide">
+    @for (technology of technologies(); track $index) {
+      <div class="d-flex flex-column align-items-center justify-content-center mx-5 tech">
+        <img 
+          [ngSrc]="technology.imageUrl" 
+          [alt]="technology.title"
+          width="50"
+          height="50"
+          class="d-block"
+        >
+        <p class="mt-2 fs-5 white-space-nowrap text-white">
+          <i>{{ technology.title }}</i>
+        </p>
+      </div>
+    }
+  </div>
+</div>
+
+      

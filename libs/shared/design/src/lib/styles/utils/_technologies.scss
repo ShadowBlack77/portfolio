@@ -1,0 +1,23 @@
+.technologies {
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &:hover .technologies-slide {
+    animation-play-state: paused;
+  }
+}

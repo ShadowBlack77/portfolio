@@ -4,9 +4,6 @@ import { Component } from "@angular/core";
   selector: 'lib-about',
   templateUrl: './about.component.html',
   standalone: true,
-  imports: [
-
-  ]
 })
 export class AboutComponent {
   

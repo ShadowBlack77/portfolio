@@ -10,7 +10,9 @@
     id="experience" 
     (appInViewport)="sectionInViewport('experience')" 
     [@fade-in-experience]="experienceState()" 
-  />
+  >
+    <lib-technologies />
+  </lib-experience> 
   <lib-projects 
     id="projects" 
     (appInViewport)="sectionInViewport('projects')" 
