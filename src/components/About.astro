@@ -1,0 +1,188 @@
+---
+
+---
+
+<section id="about" class="py-24 scroll-mt-20">
+  <div
+    class="flex items-center gap-6 mb-16 about-header opacity-0 transform translate-y-8"
+  >
+    <h2 class="text-3xl md:text-5xl font-bold tracking-tight">O mnie</h2>
+    <div class="h-px bg-zinc-800 flex-grow max-w-xs"></div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8 items-stretch">
+    <div
+      class="about-card opacity-0 transform translate-y-8 lg:col-span-3 glass-card p-8 md:p-10 relative overflow-hidden group h-full flex flex-col justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+      >
+      </div>
+
+      <svg
+        class="w-10 h-10 text-violet-500/40 mb-6"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path
+          d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+        ></path><polyline points="14 2 14 8 20 8"></polyline><line
+          x1="16"
+          y1="13"
+          x2="8"
+          y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line
+          x1="10"
+          y1="9"
+          x2="8"
+          y2="9"></line></svg
+      >
+
+      <p class="text-zinc-300 text-lg leading-relaxed mb-6 relative z-10">
+        Jestem programistą z pasją do tworzenia angażujących, wydajnych i
+        estetycznych interfejsów użytkownika. Uważam, że świetny kod to dopiero
+        połowa sukcesu – druga połowa to wyjątkowy design, który sprawia, że
+        korzystanie z aplikacji to czysta przyjemność.
+      </p>
+      <p class="text-zinc-400 leading-relaxed relative z-10">
+        Moje podejście łączy rygorystyczne standardy inżynieryjne z zamiłowaniem
+        do detali, od płynnych mikro-animacji po dbałość o architekturę
+        informacji.
+      </p>
+    </div>
+
+    <div class="lg:col-span-2 grid grid-cols-2 gap-4 h-full">
+      <div
+        class="stat-card opacity-0 transform translate-y-8 glass p-6 md:p-8 rounded-2xl flex flex-col items-center justify-center text-center gap-3 hover:border-violet-500/40 transition-colors duration-300 relative overflow-hidden group"
+      >
+        <div
+          class="absolute inset-0 bg-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+        </div>
+        <span
+          class="text-4xl md:text-5xl font-extrabold text-gradient drop-shadow-sm relative z-10"
+          ><span class="counter" data-target="2">0</span>+</span
+        >
+        <span
+          class="text-sm font-medium text-zinc-400 uppercase tracking-wider relative z-10"
+          >Lata Exp.</span
+        >
+      </div>
+      <div
+        class="stat-card opacity-0 transform translate-y-8 glass p-6 md:p-8 rounded-2xl flex flex-col items-center justify-center text-center gap-3 hover:border-cyan-500/40 transition-colors duration-300 relative overflow-hidden group"
+      >
+        <div
+          class="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+        </div>
+        <span
+          class="text-4xl md:text-5xl font-extrabold text-gradient drop-shadow-sm relative z-10"
+          ><span class="counter" data-target="7">0</span>+</span
+        >
+        <span
+          class="text-sm font-medium text-zinc-400 uppercase tracking-wider relative z-10"
+          >Projektów</span
+        >
+      </div>
+      <div
+        class="stat-card opacity-0 transform translate-y-8 glass p-6 md:p-8 rounded-2xl flex flex-col items-center justify-center text-center gap-3 hover:border-violet-500/40 transition-colors duration-300 relative overflow-hidden group"
+      >
+        <div
+          class="absolute inset-0 bg-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+        </div>
+        <span
+          class="text-4xl md:text-5xl font-extrabold text-gradient drop-shadow-sm relative z-10"
+          ><span class="counter" data-target="100">0</span>%</span
+        >
+        <span
+          class="text-sm font-medium text-zinc-400 uppercase tracking-wider relative z-10"
+          >Zaangażowania</span
+        >
+      </div>
+      <div
+        class="stat-card opacity-0 transform translate-y-8 glass p-6 md:p-8 rounded-2xl flex flex-col items-center justify-center text-center gap-3 hover:border-cyan-500/40 transition-colors duration-300 relative overflow-hidden group"
+      >
+        <div
+          class="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+        </div>
+        <span
+          class="text-4xl md:text-5xl font-extrabold text-gradient drop-shadow-sm relative z-10"
+          ><span class="counter" data-target="24">0</span>/7</span
+        >
+        <span
+          class="text-sm font-medium text-zinc-400 uppercase tracking-wider relative z-10"
+          >Pasji</span
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#about",
+      start: "top 80%",
+      once: true,
+    },
+  });
+
+  tl.to(".about-header", {
+    y: 0,
+    opacity: 1,
+    duration: 0.8,
+    ease: "power3.out",
+  })
+    .to(
+      ".about-card",
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      "-=0.6",
+    )
+    .to(
+      ".stat-card",
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out",
+        onStart: () => {
+          const counters = document.querySelectorAll(".counter");
+
+          counters.forEach((counter) => {
+            const target = parseInt(counter.getAttribute("data-target") || "0");
+
+            // Using generic object to tween properties
+            const targetObj = { val: 0 };
+
+            gsap.to(targetObj, {
+              val: target,
+              duration: 2,
+              ease: "power2.out",
+              onUpdate: function () {
+                counter.innerHTML = Math.ceil(targetObj.val).toString();
+              },
+            });
+          });
+        },
+      },
+      "-=0.6",
+    );
+</script>
