@@ -22,16 +22,28 @@
     </div>
 
     <h1
-      class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 leading-[1.1]"
+      class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 leading-[1.1]"
     >
-      <div class="hero-title-1 opacity-0 transform translate-y-4">
+      <div class="hero-title-1 opacity-0 transform translate-y-4 mb-1 sm:mb-2">
         Cześć, jestem
       </div>
-      <span class="text-gradient inline-block pb-2 min-h-[1.2em] relative">
-        <span class="hero-title-type"></span><span
-          class="hero-cursor bg-cyan-400 w-[4px] h-[0.9em] inline-block ml-1 align-middle opacity-0"
-        ></span>
-      </span>
+      <div class="relative max-w-full">
+        <span
+          class="text-gradient inline-block pb-2 invisible pointer-events-none select-none"
+          aria-hidden="true"
+        >
+          Software Developerem<span
+            class="w-[3px] sm:w-[4px] h-[0.9em] inline-block ml-1 align-middle"
+          ></span>
+        </span>
+        <span
+          class="absolute top-0 left-0 w-full text-gradient inline-block pb-2"
+        >
+          <span class="hero-title-type"></span><span
+            class="hero-cursor bg-cyan-400 w-[3px] sm:w-[4px] h-[0.9em] inline-block ml-1 align-middle opacity-0"
+          ></span>
+        </span>
+      </div>
     </h1>
 
     <p
@@ -39,7 +51,7 @@
     >
       Tworzę nowoczesne, wydajne i estetyczne aplikacje internetowe z dbałością
       o każdy detal UI/UX. Specjalizuję się w innowacyjnych rozwiązaniach
-      opartych na technologii Angular, Astro, React, Tailwind CSS i Kotlin.
+      opartych na technologii Angular, Astro, React, Tailwind i Kotlin.
     </p>
 
     <div
@@ -110,7 +122,7 @@
     .to(
       ".hero-title-type",
       {
-        text: "Web Developerem",
+        text: "Software Developerem",
         duration: 2,
         ease: "power1.inOut",
       },
